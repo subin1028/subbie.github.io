@@ -1,4 +1,4 @@
-const API_KEY = config.WEATHER_API_KEY;
+const API_KEY = "16b8ed83150343d8e1d1b0d17fe8c0b2";
 let weatherIcon = {
     '01' : 'fas fa-sun',
     '02' : 'fas fa-cloud-sun',
