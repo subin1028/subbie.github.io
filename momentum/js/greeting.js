@@ -14,7 +14,7 @@ function handleLoginSubmit(info) {
 }
 
 function paintGreetings(username){
-    greeting.innerHTML = `Hello ${username}`;
+    greeting.innerHTML = `Good Luck, ${username}&#x1F340;`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

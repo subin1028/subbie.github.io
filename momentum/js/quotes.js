@@ -1,57 +1,57 @@
 const quotes = [
     {
-        quote:"No Pain, No Fail",
-        author:"Silicagel",
+        quote:"Ryudejakeiru",
+        author:"Silica Gel",
     },
     {
-        quote:"I'm nothing without you",
+        quote:"소년",
         author:"10CM",
     },
     {
-        quote:"I sometimes think about happiness",
+        quote:"Prince",
         author:"SORAN",
     },
     {
-        quote:"why I'm crying",
-        author:"SeoYeong",
+        quote:"CHANCE!",
+        author:"PEPPERTONES",
     },
     {
-        quote:"You're my celebrity",
-        author:"IU",
+        quote:"LETTER",
+        author:"유다빈밴드",
     },
     {
-        quote:"Do you think of me?",
-        author:"10CM",
+        quote:"Cilla",
+        author:"SURL",
     },
     {
-        quote:"Isn't you happy?",
-        author:"CryingNut",
+        quote:"YOU",
+        author:"Lacuna",
     },
     {
-        quote:"All Life is Highlight",
+        quote:"Highlight",
         author:"Touched",
     },
     {
-        quote:"You'll make my perfect day",
-        author:"SORAN",
+        quote:"yours",
+        author:"Damons year",
     },
     {
-        quote:"How beautiful world",
-        author:"Peppertones",
+        quote:"New Hippie Generation",
+        author:"PEPPERTONES",
     },
     {
-        quote:"There's an egg in my ear",
-        author:"Silicagel",
+        quote:"Budland",
+        author:"Silica Gel",
     },
     {
-        quote:"I'll make you to walk a road of flower",
-        author:"Daybreak",
+        quote:"찬란(Shine)",
+        author:"Band Nah",
     }
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector(".music span:last-child");
+const author = document.querySelector(".music span:first-child");
 const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
 
 quote.innerHTML = todaysQuote.quote;
-author.innerHTML = todaysQuote.author;
+author.innerHTML = `${todaysQuote.author} - `;
