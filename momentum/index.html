@@ -4,22 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4d833dcc0.js" crossorigin="anonymous"></script>
     <title>Momentum App</title>
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?"/>
-        <input type="submit" value="Log In"/>
-    </form>
-    <h2 id="clock"></h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <div id="quote">
-        <span></span>
-        <span></span>
+    <div id="top-section">
+        <form id="login-form" class="hidden">
+            <input class="login-input" required maxlength="15" type="text" placeholder="What is your name?"/>
+            <input class="login-btn" type="submit" value="Log In"/>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
     </div>
+    
+    <div id="bottom-section">
+        
+        <div class="b-right">
+            <form id="todo-form">
+                <input class="todo-input" type="text" placeholder="Write to-do list" required>
+                <input class="todo-btn" type="submit" value="Add">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        <div class="b-left">
+            
+            <div id="weather">
+                <div class="weather-col">
+                    <span></span>
+                    <div id="city">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <h2 id="clock"></h2>
+            <div id="quote">
+                <div>
+                    <i class="fa-solid fa-music"></i>
+                    <h3>Song of the Day</h3>
+                </div>
+                <div class="music">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
